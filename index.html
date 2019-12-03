@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app='RootScopeDemoApp'>
+<head>
+	<title>RootScope Demo</title>
+	<script type="text/javascript" src='angular.min.js'></script>
+	<script type="text/javascript" src='app.js'></script>
+</head>
+<body>
+	<div ng-controller='AppOneController as app1Ctrl'>
+		<button ng-click='app1Ctrl.sendEvent();'>Say Hello To</button>
+		<input type="text" name="Name" placeholder="Name" ng-model='app1Ctrl.Name'>
+	</div>
+	<div ng-controller='AppTwoController as app2Ctrl'>
+		{{app2Ctrl.userName}}
+	</div>
+</body>
+</html>
