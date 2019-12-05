@@ -13,5 +13,9 @@
 	<div ng-controller='AppTwoController as app2Ctrl'>
 		{{app2Ctrl.userName}}
 	</div>
+	<!-- <spinner-component></spinner-component> -->
+	<div ng-controller='SpinnerController as spinCtrl'>
+	<img src='flickr-loading.gif' alt='No Image found' ng-if='spinCtrl.show'>
+	</div>
 </body>
 </html>
